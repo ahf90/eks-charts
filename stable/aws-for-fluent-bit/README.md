@@ -81,7 +81,7 @@ helm delete aws-for-fluent-bit --namespace kube-system
 | `kinesis.compression` | Setting `compression` to `zlib` will enable zlib compression of each record. By default this feature is disabled and records are not compressed. | |
 | `elasticsearch.enabled` | Whether this plugin should be enabled or not, [details](https://docs.fluentbit.io/manual/pipeline/outputs/elasticsearch) | `true` | ✔
 | `elasticsearch.match` | The log filter | `"*"` | ✔
-| `elasticsearch.awsRegion` | The region which your Firehose delivery stream(s) is/are in. | `"us-east-1"` | ✔
+| `elasticsearch.awsRegion` | The region which your Amazon ElasticSearch Service is in. | `"us-east-1"` | ✔
 | `elasticsearch.host` | The url of the Elastic Search endpoint you want log records sent to. | | ✔
 | `elasticsearch.awsAuth` | Enable AWS Sigv4 Authentication for Amazon ElasticSearch Service | On |
 | `elasticsearch.tls` | Enable or disable TLS support | On |
